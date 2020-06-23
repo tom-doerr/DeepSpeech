@@ -30,7 +30,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		505B138A249628290007DADA /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -42,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5016B2F224A201DB002F7F3E /* libdeepspeech.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdeepspeech.so; path = deepspeech_ios/libdeepspeech.so; sourceTree = "<group>"; };
+		5016B2F224A201DB002F7F3E /* libdeepspeech.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdeepspeech.so; path = deepspeech_ios_test/libdeepspeech.so; sourceTree = "<group>"; };
 		505B136124960D550007DADA /* deepspeech_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = deepspeech_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		505B136424960D550007DADA /* deepspeech_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deepspeech_ios.h; sourceTree = "<group>"; };
 		505B136524960D550007DADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +52,6 @@
 		505B137B249619C90007DADA /* deepspeech_ios.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = deepspeech_ios.modulemap; sourceTree = "<group>"; };
 		505B137C24961AF20007DADA /* deepspeech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = deepspeech.h; path = ../../deepspeech.h; sourceTree = "<group>"; };
 		505B137E24961BA70007DADA /* DeepSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSpeech.swift; sourceTree = "<group>"; };
-		50F7882E24976E6000D52237 /* libdeepspeech.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdeepspeech.dylib; path = deepspeech_ios/libdeepspeech.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				5016B2F224A201DB002F7F3E /* libdeepspeech.so */,
-				50F7882E24976E6000D52237 /* libdeepspeech.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -384,8 +382,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AWCG9S27P7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -414,8 +415,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AWCG9S27P7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5016B2F124A20132002F7F3E /* deepspeech_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5016B2F024A20132002F7F3E /* deepspeech_ios.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		5016B2F624A2037A002F7F3E /* deepspeech-0.7.4-models.scorer in Resources */ = {isa = PBXBuildFile; fileRef = 5016B2E624A200E8002F7F3E /* deepspeech-0.7.4-models.scorer */; };
-		5016B2F724A2037A002F7F3E /* deepspeech-0.7.4-models.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5016B2E324A200E7002F7F3E /* deepspeech-0.7.4-models.tflite */; };
-		50F2B1042498D6EE007CD876 /* 8455-210777-0068.wav in Resources */ = {isa = PBXBuildFile; fileRef = 50F2B1032498D6ED007CD876 /* 8455-210777-0068.wav */; };
+		50F42D2A24AA3F3600BC39E2 /* 8455-210777-0068.wav in Resources */ = {isa = PBXBuildFile; fileRef = 50F42D2824AA3F3600BC39E2 /* 8455-210777-0068.wav */; };
+		50F42D2D24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 50F42D2C24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite */; };
+		50F42D3824AA3FE600BC39E2 /* deepspeech_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F42D3724AA3FE600BC39E2 /* deepspeech_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50F42D3C24AA40AA00BC39E2 /* libdeepspeech.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F42D3B24AA40AA00BC39E2 /* libdeepspeech.so */; };
+		50F42D3E24AA413700BC39E2 /* libdeepspeech.so in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F42D3B24AA40AA00BC39E2 /* libdeepspeech.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		50F787F32497683900D52237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F787F22497683900D52237 /* AppDelegate.swift */; };
 		50F787F52497683900D52237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F787F42497683900D52237 /* SceneDelegate.swift */; };
 		50F787F72497683900D52237 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F787F62497683900D52237 /* ContentView.swift */; };
@@ -45,6 +47,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				50F42D3824AA3FE600BC39E2 /* deepspeech_ios.framework in Embed Frameworks */,
+				50F42D3E24AA413700BC39E2 /* libdeepspeech.so in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,10 +56,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5016B2E324A200E7002F7F3E /* deepspeech-0.7.4-models.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deepspeech-0.7.4-models.tflite"; sourceTree = "<group>"; };
-		5016B2E624A200E8002F7F3E /* deepspeech-0.7.4-models.scorer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deepspeech-0.7.4-models.scorer"; sourceTree = "<group>"; };
 		5016B2F024A20132002F7F3E /* deepspeech_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = deepspeech_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50F2B1032498D6ED007CD876 /* 8455-210777-0068.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "8455-210777-0068.wav"; path = "../../../../../Downloads/audio/8455-210777-0068.wav"; sourceTree = "<group>"; };
+		50F42D2824AA3F3600BC39E2 /* 8455-210777-0068.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "8455-210777-0068.wav"; sourceTree = "<group>"; };
+		50F42D2C24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deepspeech-0.7.4-models.tflite"; sourceTree = "<group>"; };
+		50F42D3724AA3FE600BC39E2 /* deepspeech_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = deepspeech_ios.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/deepspeech_ios-eggqablskmdiwletktypptxatrsp/Build/Products/Debug-iphoneos/deepspeech_ios.framework"; sourceTree = "<group>"; };
+		50F42D3B24AA40AA00BC39E2 /* libdeepspeech.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libdeepspeech.so; sourceTree = "<group>"; };
 		50F787EF2497683900D52237 /* deepspeech_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deepspeech_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F787F22497683900D52237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F787F42497683900D52237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5016B2F124A20132002F7F3E /* deepspeech_ios.framework in Frameworks */,
+				50F42D3C24AA40AA00BC39E2 /* libdeepspeech.so in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				5016B2F024A20132002F7F3E /* deepspeech_ios.framework */,
+				50F42D3B24AA40AA00BC39E2 /* libdeepspeech.so */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,9 +116,9 @@
 		50F787E62497683900D52237 = {
 			isa = PBXGroup;
 			children = (
-				5016B2E624A200E8002F7F3E /* deepspeech-0.7.4-models.scorer */,
-				5016B2E324A200E7002F7F3E /* deepspeech-0.7.4-models.tflite */,
-				50F2B1032498D6ED007CD876 /* 8455-210777-0068.wav */,
+				50F42D3724AA3FE600BC39E2 /* deepspeech_ios.framework */,
+				50F42D2C24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite */,
+				50F42D2824AA3F3600BC39E2 /* 8455-210777-0068.wav */,
 				50F787F12497683900D52237 /* deepspeech_ios_test */,
 				50F788082497683A00D52237 /* deepspeech_ios_testTests */,
 				50F788132497683A00D52237 /* deepspeech_ios_testUITests */,
@@ -275,12 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5016B2F624A2037A002F7F3E /* deepspeech-0.7.4-models.scorer in Resources */,
-				5016B2F724A2037A002F7F3E /* deepspeech-0.7.4-models.tflite in Resources */,
-				50F2B1042498D6EE007CD876 /* 8455-210777-0068.wav in Resources */,
 				50F787FF2497683A00D52237 /* LaunchScreen.storyboard in Resources */,
 				50F787FC2497683A00D52237 /* Preview Assets.xcassets in Resources */,
+				50F42D2A24AA3F3600BC39E2 /* 8455-210777-0068.wav in Resources */,
 				50F787F92497683A00D52237 /* Assets.xcassets in Resources */,
+				50F42D2D24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,12 +480,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"deepspeech_ios_test/Preview Content\"";
+				DEVELOPMENT_TEAM = AWCG9S27P7;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = deepspeech_ios_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.mozilla.deepspeech-ios-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,12 +505,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"deepspeech_ios_test/Preview Content\"";
+				DEVELOPMENT_TEAM = AWCG9S27P7;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = deepspeech_ios_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.mozilla.deepspeech-ios-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
