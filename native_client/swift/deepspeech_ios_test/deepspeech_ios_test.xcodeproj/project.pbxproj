@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5016B2F124A20132002F7F3E /* deepspeech_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5016B2F024A20132002F7F3E /* deepspeech_ios.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		50DF1FB124AB6BF2000BA7DF /* deepspeech-0.7.4-models.scorer in Resources */ = {isa = PBXBuildFile; fileRef = 50DF1FB024AB6BF2000BA7DF /* deepspeech-0.7.4-models.scorer */; };
 		50F42D2A24AA3F3600BC39E2 /* 8455-210777-0068.wav in Resources */ = {isa = PBXBuildFile; fileRef = 50F42D2824AA3F3600BC39E2 /* 8455-210777-0068.wav */; };
 		50F42D2D24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 50F42D2C24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite */; };
 		50F42D3824AA3FE600BC39E2 /* deepspeech_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F42D3724AA3FE600BC39E2 /* deepspeech_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -57,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		5016B2F024A20132002F7F3E /* deepspeech_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = deepspeech_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DF1FAE24AB6AA5000BA7DF /* deepspeech-0.7.4-models.scorer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deepspeech-0.7.4-models.scorer"; sourceTree = "<group>"; };
+		50DF1FB024AB6BF2000BA7DF /* deepspeech-0.7.4-models.scorer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deepspeech-0.7.4-models.scorer"; sourceTree = "<group>"; };
 		50F42D2824AA3F3600BC39E2 /* 8455-210777-0068.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "8455-210777-0068.wav"; sourceTree = "<group>"; };
 		50F42D2C24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deepspeech-0.7.4-models.tflite"; sourceTree = "<group>"; };
 		50F42D3724AA3FE600BC39E2 /* deepspeech_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = deepspeech_ios.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/deepspeech_ios-eggqablskmdiwletktypptxatrsp/Build/Products/Debug-iphoneos/deepspeech_ios.framework"; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 		50F787E62497683900D52237 = {
 			isa = PBXGroup;
 			children = (
+				50DF1FAE24AB6AA5000BA7DF /* deepspeech-0.7.4-models.scorer */,
+				50DF1FB024AB6BF2000BA7DF /* deepspeech-0.7.4-models.scorer */,
 				50F42D3724AA3FE600BC39E2 /* deepspeech_ios.framework */,
 				50F42D2C24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite */,
 				50F42D2824AA3F3600BC39E2 /* 8455-210777-0068.wav */,
@@ -284,9 +289,10 @@
 			files = (
 				50F787FF2497683A00D52237 /* LaunchScreen.storyboard in Resources */,
 				50F787FC2497683A00D52237 /* Preview Assets.xcassets in Resources */,
-				50F42D2A24AA3F3600BC39E2 /* 8455-210777-0068.wav in Resources */,
 				50F787F92497683A00D52237 /* Assets.xcassets in Resources */,
+				50F42D2A24AA3F3600BC39E2 /* 8455-210777-0068.wav in Resources */,
 				50F42D2D24AA3F8500BC39E2 /* deepspeech-0.7.4-models.tflite in Resources */,
+				50DF1FB124AB6BF2000BA7DF /* deepspeech-0.7.4-models.scorer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5016B2F324A201DB002F7F3E /* libdeepspeech.so in Frameworks */ = {isa = PBXBuildFile; fileRef = 5016B2F224A201DB002F7F3E /* libdeepspeech.so */; };
-		5016B2F424A201DB002F7F3E /* libdeepspeech.so in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 5016B2F224A201DB002F7F3E /* libdeepspeech.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		5016B2F524A201F8002F7F3E /* libdeepspeech.so in Resources */ = {isa = PBXBuildFile; fileRef = 5016B2F224A201DB002F7F3E /* libdeepspeech.so */; };
 		505B136B24960D550007DADA /* deepspeech_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B136124960D550007DADA /* deepspeech_ios.framework */; };
 		505B137024960D550007DADA /* deepspeech_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B136F24960D550007DADA /* deepspeech_iosTests.swift */; };
 		505B137224960D550007DADA /* deepspeech_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 505B136424960D550007DADA /* deepspeech_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5016B2F424A201DB002F7F3E /* libdeepspeech.so in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5016B2F524A201F8002F7F3E /* libdeepspeech.so in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

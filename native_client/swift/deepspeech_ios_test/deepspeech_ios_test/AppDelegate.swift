@@ -12,7 +12,7 @@ import deepspeech_ios
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let ptr = DeepSpeech.open(path: Bundle.main.path(forResource: "deepspeech-0.7.4-models", ofType: "tflite")!)
+        let ptr = DeepSpeech.open(path: Bundle.main.path(forResource: "deepspeech-0.7.4-models", ofType: "tflite")!, scorerPath: Bundle.main.path(forResource: "deepspeech-0.7.4-models", ofType: "scorer"))
         DeepSpeech.test(modelState: ptr, audioPath: Bundle.main.path(forResource: "8455-210777-0068", ofType: "wav")!)
         return true
     }
